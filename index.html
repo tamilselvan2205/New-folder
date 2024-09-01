@@ -1,3 +1,6 @@
+<h1>Simple Game
+
+</h1>
 <h1>Guess the number</h1>
 <input id="Guess">
 <button onclick="check()">Check</button>
@@ -9,20 +12,19 @@
     var score = document.getElementById("num2")
     var random = Math.floor(Math.random() * 10) + 1
     var totalscore = 10
-    
+
 
     function check() {
         var entered_no = guess.value
-        if (random==entered_no) {
+        if (random == entered_no) {
             result.textContent = "Right"
             alert("Wow!!! You are right")
         }
-        else
-        {
-            result.textContent="Wrong"
-            
-            totalscore=totalscore-1
-            score.textContent="Score:"+totalscore
+        else {
+            result.textContent = "Wrong"
+
+            totalscore = totalscore - 1
+            score.textContent = "Score:" + totalscore
         }
 
     }
